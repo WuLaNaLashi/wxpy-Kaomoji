@@ -1,0 +1,16 @@
+--- /tmp/wx_orig_check/super_symbols_orig.lua	2026-08-05 08:35:19.853479678 +0800
++++ lua/wanxiang/super_symbols.lua	2026-08-05 08:27:52.118449890 +0800
+@@ -132,10 +132,12 @@
+         local config = env.engine.schema.config
+         local sym_path = config:get_string("super_symbols/data_sym") or "lua/data/codex_sym.txt"
+         local emoji_path = config:get_string("super_symbols/data_emoji") or "lua/data/codex_emoji.txt"
++        local kaomoji_path = config:get_string("super_symbols/data_kaomoji") or "lua/data/kaomoji.txt"
+ 
+         STATE.stores = {
+             sym = read_store(sym_path, "super_sym"),
+-            emoji = read_store(emoji_path, "super_emoji")
++            emoji = read_store(emoji_path, "super_emoji"),
++            kaomoji = read_store(kaomoji_path, "super_kaomoji")
+         }
+         STATE.loaded = true
+     end)

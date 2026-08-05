@@ -1,0 +1,177 @@
+# kaomoji 颜文字数据 (手动整理)
+# format: name<TAB>kaomoji
+# name 支持点分路径，便于 /kk.happy 或 /kk?happy 查询
+# 命名规则: 英文分类.子类 / 中文拼音分类，两者都可命中
+
+# ===== 开心类 =====
+happy	(◕‿◕)
+happy.smile	(｡◕‿◕｡)
+happy.big	(*´▽`*)
+happy.laugh	٩(๑❛ᴗ❛๑)۶
+happy.joy	ヾ(≧▽≦*)o
+happy.cute	(๑˃̵ᴗ˂̵)و
+happy.thumbs	(￣▽￣)ノ
+happy.yay	＼(￣▽￣)／
+happy.wink	(´∀｀)♡
+happy.shy	(*σ´∀｀)σ
+kaixin	(◕‿◕)
+kaixin.xiao	(｡◕‿◕｡)
+kaixin.da	(*´▽`*)
+kaixin.xiao2	٩(๑❛ᴗ❛๑)۶
+kaixin.gaoxing	ヾ(≧▽≦*)o
+kaixin.keai	(๑˃̵ᴗ˂̵)و
+kaixin.zan	(￣▽￣)ノ
+kaixin.wan	＼(￣▽￣)／
+kaixin.haixiu	(*σ´∀｀)σ
+
+# ===== 笑类 =====
+laugh	(*^▽^*)
+laugh.hehe	(￣▽￣)"
+laugh.haha	o(*￣▽￣*)ブ
+laugh.grin	(*￣∇￣)ノ
+laugh.emoji	😄
+xiao	(*^▽^*)
+xiao.hehe	(￣▽￣)"
+xiao.haha	o(*￣▽￣*)ブ
+xiao.lou	(*￣∇￣)ノ
+
+# ===== 爱心类 =====
+love	(♡´▽`♡)
+love.heart	(♥ω♥*)
+love.kiss	(*￣3￣)╭~~
+love.hug	(づ￣ 3￣)づ
+love.crush	(๑•̀ㅂ•́)و✧
+love.confess	(´,,•ω•,,)♡
+love.sweet	(*✧×✧*)
+ai	(♡´▽`♡)
+ai.xin	(♥ω♥*)
+ai.qin	(*￣3￣)╭~~
+ai.bao	(づ￣ 3￣)づ
+ai.bai	(๑•̀ㅂ•́)و✧
+ai.gaobai	(´,,•ω•,,)♡
+ai.tian	(*✧×✧*)
+
+# ===== 哭/伤心类 =====
+cry	(╥﹏╥)
+cry.sad	o(TヘTo)
+cry.tear	(ಥ﹏ಥ)
+cry.bawl	Ｏ(≧口≦)Ｏ
+cry.pout	(๑• . •๑)
+ku	(╥﹏╥)
+ku.shangxin	o(TヘTo)
+ku.liuilei	(ಥ﹏ಥ)
+ku.hao	Ｏ(≧口≦)Ｏ
+ku.jueqi	(๑• . •๑)
+
+# ===== 生气类 =====
+angry	(╬ Ò ‸ Ó)
+angry.mad	(ꐦ ಠ皿ಠ )
+angry.flip	(╯°□°)╯︵ ┻━┻
+angry.table	┻━┻︵╰(‵□′)╯︵┻━┻
+angry.hmph	(￣^￣)
+angry.furious	ヽ(｀Д´)ﾉ
+shengqi	(╬ Ò ‸ Ó)
+shengqi.fen	(ꐦ ಠ皿ಠ )
+shengqi.xian	(╯°□°)╯︵ ┻━┻
+shengqi.zhui	┻━┻︵╰(‵□′)╯︵┻━┻
+shengqi.heng	(￣^￣)
+
+# ===== 惊讶类 =====
+surprise	Σ(ﾟдﾟ;)
+surprise.shock	Σ(っ °Д °;)っ
+surprise.wow	(⊙o⊙)
+surprise.what	(°△°|||)
+surprise.gasp	(ﾟДﾟ)
+jingya	Σ(ﾟдﾟ;)
+jingya.zhen	Σ(っ °Д °;)っ
+jingya.wa	(⊙o⊙)
+jingya.sha	(°△°|||)
+jingya.a	(ﾟДﾟ)
+
+# ===== 无语/汗类 =====
+speechless	(￣_￣|||)
+speechless.sweat	(￣▽￣")汗
+speechless.meh	¯\(°_o)/¯
+speechless.sigh	( ︶︿︶)
+wuyu	(￣_￣|||)
+wuyu.han	(￣▽￣")汗
+wuyu.wunai	¯\(°_o)/¯
+wuyu.tanqi	( ︶︿︶)
+
+# ===== 害羞类 =====
+shy	(///￣ ￣///)
+shy.blush	(*ﾉωﾉ)
+shy.embarrassed	(⁄ ⁄•⁄ω⁄•⁄ ⁄)
+haixiu	(///￣ ￣///)
+haixiu.hong	(*ﾉωﾉ)
+haixiu.ganga	(⁄ ⁄•⁄ω⁄•⁄ ⁄)
+
+# ===== 困惑类 =====
+confused	(⊙_⊙)?
+confused.think	(´・_・`)
+confused.huh	(°ー°〃)
+kunhuo	(⊙_⊙)?
+kunhuo.xiang	(´・_・`)
+kunhuo.e	(°ー°〃)
+
+# ===== 点赞/赞同类 =====
+thumbsup	(￣▽￣)ノ"
+ok	(´･ω･`)
+agree	(๑•̀ㅂ•́)و✧
+good	d(￣▽￣)b
+zan	(￣▽￣)ノ"
+haode	(´･ω･`)
+tongyi	(๑•̀ㅂ•́)و✧
+hao	d(￣▽￣)b
+
+# ===== 招手/再见类 =====
+wave	(￣▽￣)～■干杯□～(￣▽￣)
+bye	(￣▽￣)ノ
+byebye	( ToT)～～(ToT)
+byebye.bye	ヾ(￣▽￣)Bye~Bye~
+zhaoshou	(￣▽￣)～■干杯□～(￣▽￣)
+zaijian	(￣▽￣)ノ
+baibai	( ToT)～～(ToT)
+
+# ===== 睡觉类 =====
+sleep	(－ω－) zzZ
+sleep.night	( ˘ω˘ ) zzZ
+sleep.tired	(´〜｀*) zzZ
+shuijiao	(－ω－) zzZ
+shuijiao.wan	( ˘ω˘ ) zzZ
+shuijiao.lei	(´〜｀*) zzZ
+
+# ===== 吃货类 =====
+eat	(￣～￣) 嚼
+eat.yummy	(๑´ڡ`๑)
+eat.hungry	(￣﹃￣)
+eat.drink	( ˘▽˘)oфф
+chi	(￣～￣) 嚼
+chi.haochi	(๑´ڡ`๑)
+chi.e	(￣﹃￣)
+chi.he	( ˘▽˘)oфф
+
+# ===== 鬼脸/玩闹类 =====
+playful	(￣ー￣)
+playful.tongue	(￣^￣)ゞ
+playful.bleh	( ＞ω＜)
+playful.ghost	(o′┏▽┓｀o)
+wannao	(￣ー￣)
+wannao.shen	(￣^￣)ゞ
+wannao.tu	( ＞ω＜)
+wannao.gui	(o′┏▽┓｀o)
+
+# ===== 鼓励/加油类 =====
+cheer	(ง •̀_•́)ง
+cheer.fight	(๑•̀ㅂ•́)و✧
+cheer.go	ヾ(◍°∇°◍)ﾉﾞ
+jiayou	(ง •̀_•́)ง
+jiayou.fight	(๑•̀ㅂ•́)و✧
+jiayou.chongya	ヾ(◍°∇°◍)ﾉﾞ
+
+# ===== 问候类 =====
+hello	( ´ ▽ ` )ﾉ
+hi	ヾ(￣▽￣)
+nihao	( ´ ▽ ` )ﾉ
+ninhao	( ´ ▽ ` )ﾉ
+aniong	ヾ(￣▽￣)

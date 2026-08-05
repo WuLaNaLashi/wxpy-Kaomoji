@@ -1,0 +1,26 @@
+# 颜文字功能配置片段
+# 合并方式：将这些内容追加到你的 wanxiang.custom.yaml 的 patch: 节点下
+# 注意：如果已有 super_symbols/triggers，需要整体替换（不能重复定义）
+
+  # ===== 颜文字功能开始 =====
+  # super_symbols 新增 kaomoji 类型（前缀 /kk）
+  super_symbols/triggers:
+    - { kind: sym,      exact: /sym,   label: 超级符号, marks: ["?", "/"] }
+    - { kind: emoji,    exact: /emoji, label: 超级表情, marks: ["?", "/"] }
+    - { kind: kaomoji,  exact: /kk,    label: 颜文字,   marks: ["?", "/"] }
+  super_symbols/data_kaomoji: "lua/data/kaomoji.txt"
+
+  # recognizer 增加 /kk 模式识别，避免被 punct 抢先
+  recognizer/patterns/super_kaomoji: "^/kk[.?/][A-Za-z.]*$"
+  recognizer/patterns/super_kaomoji_pre: "^/kk[.?/]?$"
+
+  # 候选区直接出颜文字（输入中文词时自动追加，常驻生效）
+  super_replacer/rules/+:
+    - option: true
+      mode: append
+      comment_mode: none
+      tags: [abc]
+      prefix: _kk_
+      files:
+        - lua/data/kaomoji_replacer.txt
+  # ===== 颜文字功能结束 =====
