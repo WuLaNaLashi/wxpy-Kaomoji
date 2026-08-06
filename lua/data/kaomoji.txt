@@ -1,4 +1,4 @@
-# kaomoji 颜文字数据 (手动整理)
+# kaomoji 颜文字数据（扩充版）
 # format: name<TAB>kaomoji
 # name 支持点分路径，便于 /kk.happy 或 /kk?happy 查询
 # 命名规则: 英文分类.子类 / 中文拼音分类，两者都可命中
@@ -14,6 +14,16 @@ happy.thumbs	(￣▽￣)ノ
 happy.yay	＼(￣▽￣)／
 happy.wink	(´∀｀)♡
 happy.shy	(*σ´∀｀)σ
+happy.dance	ヾ(＾∇＾)
+happy.party	╰(°▽°)╯
+happy.celebrate	＼(￣▽￣)／
+happy.bright	(*ﾟｰﾟ)
+happy.glad	(´▽`ʃ♡ƪ)
+happy.cheer	ヘ(￣▽￣ヘ)
+happy.excited	ε=ε=ε=(~￣▽￣)~
+happy.overjoyed	ヽ(>∀<☆)ノ
+happy.content	(´｡• ᵕ •｡`)
+happy.bliss	(☻-☻)
 kaixin	(◕‿◕)
 kaixin.xiao	(｡◕‿◕｡)
 kaixin.da	(*´▽`*)
@@ -23,6 +33,8 @@ kaixin.keai	(๑˃̵ᴗ˂̵)و
 kaixin.zan	(￣▽￣)ノ
 kaixin.wan	＼(￣▽￣)／
 kaixin.haixiu	(*σ´∀｀)σ
+kaixin.tiaowu	ヾ(＾∇＾)
+kaixin.pa	╰(°▽°)╯
 
 # ===== 笑类 =====
 laugh	(*^▽^*)
@@ -30,10 +42,21 @@ laugh.hehe	(￣▽￣)"
 laugh.haha	o(*￣▽￣*)ブ
 laugh.grin	(*￣∇￣)ノ
 laugh.emoji	😄
+laugh.smile	(*￣︶￣)
+laugh.chuckle	(˘▽˘>̈)oooo
+laugh.giggle	(˶ᵔ ᵕ ᵔ˶)
+laugh.lol	(≧∇≦)ﾉ
+laugh.rofl	(ﾉ∀^*)
+laugh.snicker	(ˉ▽￣～)
+laugh.smirk	(￣┏━┓￣)
+laugh.snile	(◡‿◡)
+laugh.hearty	(*☻-☻*)
 xiao	(*^▽^*)
 xiao.hehe	(￣▽￣)"
 xiao.haha	o(*￣▽￣*)ブ
 xiao.lou	(*￣∇￣)ノ
+xiao.wei	(*￣︶￣)
+xiao.daxiao	(≧∇≦)ﾉ
 
 # ===== 爱心类 =====
 love	(♡´▽`♡)
@@ -43,6 +66,14 @@ love.hug	(づ￣ 3￣)づ
 love.crush	(๑•̀ㅂ•́)و✧
 love.confess	(´,,•ω•,,)♡
 love.sweet	(*✧×✧*)
+love.couple	(´• ω •`)
+love.romance	♡(˃͈ દ ˂͈ ༶ )
+love.wedding	( ◡ᴗ◡)
+love.flirt	( ˘ ³˘)❤
+love.blush	(´,,•ω•,,)♡
+love.eyes	(♡˙︶˙♡)
+love.sparkle	(♡´∀`♡)
+love.forever	(♡°▽°♡)
 ai	(♡´▽`♡)
 ai.xin	(♥ω♥*)
 ai.qin	(*￣3￣)╭~~
@@ -50,6 +81,8 @@ ai.bao	(づ￣ 3￣)づ
 ai.bai	(๑•̀ㅂ•́)و✧
 ai.gaobai	(´,,•ω•,,)♡
 ai.tian	(*✧×✧*)
+ai.qing	(´• ω •`)
+ai.mei	♡(˃͈ દ ˂͈ ༶ )
 
 # ===== 哭/伤心类 =====
 cry	(╥﹏╥)
@@ -57,11 +90,25 @@ cry.sad	o(TヘTo)
 cry.tear	(ಥ﹏ಥ)
 cry.bawl	Ｏ(≧口≦)Ｏ
 cry.pout	(๑• . •๑)
+cry.despair	(Ｔ▽Ｔ)
+cry.heartbroken	(╯︵╰,)
+cry.depressed	(︶︹︶)
+cry.miserable	o(╥﹏╥)o
+cry.disappointed	(╯_╰)
+cry.lonely	(っ˘̩╭╮˘̩)っ
+cry.regret	(；´∀｀)
+cry.grief	ε(´с｀р)
+cry.whimper	(╯︵╰,)
 ku	(╥﹏╥)
 ku.shangxin	o(TヘTo)
 ku.liuilei	(ಥ﹏ಥ)
 ku.hao	Ｏ(≧口≦)Ｏ
 ku.jueqi	(๑• . •๑)
+ku.tong	(Ｔ▽Ｔ)
+ku.xin sui	(╯︵╰,)
+ku.xiao	(︶︹︶)
+ku.shi	(╯_╰)
+ku.gudan	(っ˘̩╭╮˘̩)っ
 
 # ===== 生气类 =====
 angry	(╬ Ò ‸ Ó)
@@ -70,11 +117,20 @@ angry.flip	(╯°□°)╯︵ ┻━┻
 angry.table	┻━┻︵╰(‵□′)╯︵┻━┻
 angry.hmph	(￣^￣)
 angry.furious	ヽ(｀Д´)ﾉ
+angry.irritated	(╬￣皿￣)
+angry.grumpy	(◣_◢)
+angry.annoyed	(◔ д◔)
+angry.indignant	(◣◢)
+angry.rage	(ノಠ益ಠ)ノ彡┻━┻
+angry.irritate	(¬_¬)
 shengqi	(╬ Ò ‸ Ó)
 shengqi.fen	(ꐦ ಠ皿ಠ )
 shengqi.xian	(╯°□°)╯︵ ┻━┻
 shengqi.zhui	┻━┻︵╰(‵□′)╯︵┻━┻
 shengqi.heng	(￣^￣)
+shengqi.baohuo	ヽ(｀Д´)ﾉ
+shengqi.fennu	(╬￣皿￣)
+shengqi.zhua	(◣_◢)
 
 # ===== 惊讶类 =====
 surprise	Σ(ﾟдﾟ;)
@@ -82,96 +138,333 @@ surprise.shock	Σ(っ °Д °;)っ
 surprise.wow	(⊙o⊙)
 surprise.what	(°△°|||)
 surprise.gasp	(ﾟДﾟ)
+surprise.amazed	(°o°)
+surprise.gosh	Σ(°Д°
+surprise.unbelievable	╭(°A°`)╮
+surprise.wtf	(⊙_⊙)?
+surprise.doubt	(・_・;)
 jingya	Σ(ﾟдﾟ;)
 jingya.zhen	Σ(っ °Д °;)っ
 jingya.wa	(⊙o⊙)
 jingya.sha	(°△°|||)
 jingya.a	(ﾟДﾟ)
+jingya.yi	(°o°)
 
 # ===== 无语/汗类 =====
 speechless	(￣_￣|||)
 speechless.sweat	(￣▽￣")汗
 speechless.meh	¯\(°_o)/¯
 speechless.sigh	( ︶︿︶)
+speechless.dumbfounded	(・_・;)
+speechless.helpless	╮(╯_╰)╭
+speechless.speechless	(…)
+speechless.eyeroll	(￢_￢)
+speechless.zenme	∑(O_O;)
+speechless.facepalm	(╯°□°）╯︵( .o.)
 wuyu	(￣_￣|||)
 wuyu.han	(￣▽￣")汗
 wuyu.wunai	¯\(°_o)/¯
 wuyu.tanqi	( ︶︿︶)
+wuyu.yan	╮(╯_╰)╭
+wuyu.zenmaban	∑(O_O;)
+wuyu.pai	(╯°□°）╯︵( .o.)
 
 # ===== 害羞类 =====
 shy	(///￣ ￣///)
 shy.blush	(*ﾉωﾉ)
 shy.embarrassed	(⁄ ⁄•⁄ω⁄•⁄ ⁄)
+shy.bashful	(//ω//)
+shy.shy	(///.///)
+shy.red	(￣ε￣@)
+shy.cover	(*ノωノ)
 haixiu	(///￣ ￣///)
 haixiu.hong	(*ﾉωﾉ)
 haixiu.ganga	(⁄ ⁄•⁄ω⁄•⁄ ⁄)
+haixiu.xiukou	(//ω//)
 
 # ===== 困惑类 =====
 confused	(⊙_⊙)?
 confused.think	(´・_・`)
 confused.huh	(°ー°〃)
+confused.ponder	( ˘•ω•˘ )
+confused.question	(・_・)?
+confused.baffled	(⊙_⊙)？
+confused.unclear	(´ε｀ )
+confused.wat	(._.)
+confused.dazed	(°ー°〃)
 kunhuo	(⊙_⊙)?
 kunhuo.xiang	(´・_・`)
 kunhuo.e	(°ー°〃)
+kunhuo.yi	(・_·)?
 
 # ===== 点赞/赞同类 =====
 thumbsup	(￣▽￣)ノ"
 ok	(´･ω･`)
 agree	(๑•̀ㅂ•́)و✧
 good	d(￣▽￣)b
+perfect	(•̀ᴗ•́)و ̑̑
+excellent	o(*￣▽￣*)o
+nice	(๑•̀ㅂ•́)و✧
+cool	(✧ω✧)
+awesome	(•̀ᴗ•́)و ̑̑
+bravo	o(*￣▽￣*)ブ
 zan	(￣▽￣)ノ"
 haode	(´･ω･`)
 tongyi	(๑•̀ㅂ•́)و✧
 hao	d(￣▽￣)b
+wonderful	o(*￣▽￣*)o
+niubi	(✧ω✧)
+bang	(•̀ᴗ•́)و ̑̑
 
 # ===== 招手/再见类 =====
 wave	(￣▽￣)～■干杯□～(￣▽￣)
 bye	(￣▽￣)ノ
 byebye	( ToT)～～(ToT)
 byebye.bye	ヾ(￣▽￣)Bye~Bye~
+wave.hi	( ´ ▽ ` )ﾉ
+wave.hello	ヾ(￣▽￣)
+wave.bye	( ´ ▽ ` )
+wave.see	(・ω・)ノ
+wave.hey	＼(￣▽￣)／
 zhaoshou	(￣▽￣)～■干杯□～(￣▽￣)
 zaijian	(￣▽￣)ノ
 baibai	( ToT)～～(ToT)
+huixie	ヾ(￣▽￣)Bye~Bye~
 
 # ===== 睡觉类 =====
 sleep	(－ω－) zzZ
 sleep.night	( ˘ω˘ ) zzZ
 sleep.tired	(´〜｀*) zzZ
+sleep.sleep	(ᴗ˳ᴗ) ﾟ｡
+sleep.drowsy	( _ _).。oO
+sleep.snooze	( ˘ω˘ )
+sleep.bed	(´〜｀*)
+sleep.yawn	(´^∀^｀)
 shuijiao	(－ω－) zzZ
 shuijiao.wan	( ˘ω˘ ) zzZ
 shuijiao.lei	(´〜｀*) zzZ
+shuijiao.keshui	( _ _).。oO
+dahaqian	(´^∀^｀)
 
 # ===== 吃货类 =====
 eat	(￣～￣) 嚼
 eat.yummy	(๑´ڡ`๑)
 eat.hungry	(￣﹃￣)
 eat.drink	( ˘▽˘)oфф
+eat.coffee	( ˘▽˘)☕
+eat.tea	( ´ー｀)y━･~~
+eat.cheers	(￣▽￣)～■□～(￣▽￣)
+eat.cake	(♡˙︶˙♡)🍰
+eat.delicious	(*˘︶˘*).｡.:*♡
 chi	(￣～￣) 嚼
 chi.haochi	(๑´ڡ`๑)
 chi.e	(￣﹃￣)
 chi.he	( ˘▽˘)oфф
+chi.kafei	( ˘▽˘)☕
+chi.cha	( ´ー｀)y━･~~
+chi.ganbei	(￣▽￣)～■□～(￣▽￣)
 
 # ===== 鬼脸/玩闹类 =====
 playful	(￣ー￣)
 playful.tongue	(￣^￣)ゞ
 playful.bleh	( ＞ω＜)
 playful.ghost	(o′┏▽┓｀o)
+playful.wink	(´∀｀)
+playful.mischief	(￣ｰ￣)
+playful.silly	(≧▽≦)
+playful.joke	(￣▽￣)"
+playful.tease	(　´∀｀)
+playful.goofy	(・∀・)
 wannao	(￣ー￣)
 wannao.shen	(￣^￣)ゞ
 wannao.tu	( ＞ω＜)
 wannao.gui	(o′┏▽┓｀o)
+wannao.tiaopi	(￣ｰ￣)
+wannao.shagu	(・∀・)
 
 # ===== 鼓励/加油类 =====
 cheer	(ง •̀_•́)ง
 cheer.fight	(๑•̀ㅂ•́)و✧
 cheer.go	ヾ(◍°∇°◍)ﾉﾞ
+cheer.lucky	(￣▽￣)ノ
+cheer.strength	(ง •̀ω•́)ง✧
+cheer.support	(*^▽^*)
+cheer.hooray	＼(￣▽￣)／
+cheer.encourage	(•̀ᴗ•́)و
 jiayou	(ง •̀_•́)ง
 jiayou.fight	(๑•̀ㅂ•́)و✧
 jiayou.chongya	ヾ(◍°∇°◍)ﾉﾞ
+jiayou.xing	(ง •̀ω•́)ง✧
 
 # ===== 问候类 =====
 hello	( ´ ▽ ` )ﾉ
 hi	ヾ(￣▽￣)
+morning	(*^▽^*)
+goodmorning	(´･ω･`)
+goodnight	(－ω－) zzZ
 nihao	( ´ ▽ ` )ﾉ
 ninhao	( ´ ▽ ` )ﾉ
 aniong	ヾ(￣▽￣)
+zaoan	(*^▽^*)
+wanan	(－ω－) zzZ
+
+# ===== 冷/汗/尴尬类（新增）=====
+cold	(´Д｀)
+cold.shiver	(；´Д｀)
+cold.freeze	(º﹃º )
+cold.chilly	((´д｀))
+sweat	(￣▽￣")汗
+sweat.drop	(；´∀｀)
+sweat.nervous	(^^;)
+sweat.awkward	( ̄▽ ̄;)
+cold.leng	(º﹃º )
+leng	(´Д｀)
+han	(￣▽￣")汗
+ganga	( ̄▽ ̄;)
+
+# ===== 骄傲/得瑟类（新增）=====
+proud	(￣▽￣)ノ"
+proud.smug	(￣^￣)ゞ
+proud.cool	(✧ω✧)
+proud.showoff	(￣ω￣)
+proud.confident	(￣ー￣)ｄ
+jiaoao	(￣▽￣)ノ"
+deyi	(￣^￣)ゞ
+ku	2	(✧ω✧)
+xiaose	(￣ω￣)
+
+# ===== 委屈/可怜类（新增）=====
+pitiful	(╥_╥)
+pitiful.wronged	(｡•́︿•̀｡)
+pitiful.poor	(っ- ‸ - ς)
+pitiful.sad	(●´ω｀●)
+pitiful.angel	(◕ᴗ◕✿)
+weiqu	(╥_╥)
+kelian	(｡•́︿•̀｡)
+aa	(っ- ‸ - ς)
+
+# ===== 疲惫/累类（新增）=====
+tired	(´〜｀*)
+tired.exhausted	(;´Д｀)
+tired.dead	(x_x)
+tired.weary	(=_=)
+tired.burnout	(Ｔ▽Ｔ)
+tired.collapse	Σ(°Д°
+lei	(´〜｀*)
+lei.pi	(;´Д｀)
+lei.gui	(x_x)
+lei.lei	(=_=)
+
+# ===== 思考/想类（新增）=====
+think	(˘•ω•˘)
+think.idea	(✧ω✧)
+think.epiphany	( ・ω・)✧
+think.doubt	(・_・)?
+think.consider	(￣ω￣;)
+think.bright	(◕ᴗ◕✿)
+xiang	(˘•ω•˘)
+xiang.zhuyi	(✧ω✧)
+xiang.linggan	( ・ω・)✧
+sikao	(˘•ω•˘)
+
+# ===== 期待/希望类（新增）=====
+hope	( ´ ▽ ` )
+hope.expectant	(◕ᴗ◕✿)
+hope.wish	(ˆ▽ˆ)
+hope.pray	(っ˘̩╭╮˘̩)っ
+hope.dream	(♡˙︶˙♡)
+qiwang	( ´ ▽ ` )
+qipan	(◕ᴗ◕✿)
+yuanwang	(ˆ▽ˆ)
+qidao	(っ˘̩╭╮˘̩)っ
+
+# ===== 鄙视/不屑类（新增）=====
+despise	(￢_￢)
+despise.scoff	(︶︿︶)=凸
+despise.smirk	(￣^￣)ゞ
+despise.negative	(˘·ω˘)
+bishí	(￢_￢)
+biishi	(︶︿︶)=凸
+kuan	(￣^￣)ゞ
+
+# ===== 中性/平静类（新增）=====
+neutral	(・_・)
+neutral.calm	(´-ω-`)
+neutral.silent	(…)
+neutral.blank	( ̄▽ ̄)
+neutral.silent.face	( -_・)
+pingjing	(´-ω-`)
+zhengjing	( ̄▽ ̄)
+chenmo	(…)
+
+# ===== 问候补充（新增）=====
+sorry	(｡•́︿•̀｡)
+sorry.apology	(m_m)
+sorry.regret	(；´∀｀)
+sorry.mybad	(>.<)
+duibuqi	(｡•́︿•̀｡)
+baqian	(m_m)
+qianyisi	(>.<)
+
+thanks	(*^▽^*)
+thanks.grateful	(´▽`ʃ♡ƪ)
+thanks.appreciate	(♥ω♥*)
+xiexie	(*^▽^*)
+ganxie	(´▽`ʃ♡ƪ)
+duoxie	(♥ω♥*)
+
+# ===== 祝福类（新增）=====
+bless	(♡˙︶˙♡)
+bless.wish	( ´ ▽ ` )ﾉ
+bless.lucky	(✧ω✧)
+bless.happiness	(☻-☻)
+zhufu	(♡˙︶˙♡)
+zhufu.baoyou	(✧ω✧)
+xingfu	(☻-☻)
+
+# ===== 音乐/艺术类（新增）=====
+music	( ´ー｀)y━･~~
+music.sing	(♡˙▽˙♡)
+music.dance	ヾ(＾∇＾)
+music.hum	(´^∀^｀)
+yinyue	( ´ー｀)y━･~~
+changge	(♡˙▽˙♡)
+tiaowu	ヾ(＾∇＾)
+
+# ===== 生气/打人（扩展）=====
+beat	(╯°□°）╯︵ ┻━┻
+beat.punch	(ノಠ益ಠ)ノ彡┻━┻
+beat.kick	(踢╬ಡ益ಡ)
+beat.smash	╭(￣m￣*)╭
+da	(╯°□°）╯︵ ┻━┻
+ouren	(ノಠ益ಠ)ノ彡┻━┻
+
+# ===== 天气/自然类（新增）=====
+sun	☀️
+cloud	☁️
+rain	🌧️
+snow	❄️
+star	⭐
+moon	🌙
+sun.sunshine	🌈
+sun.flower	🌻
+taiyang	☀️
+xiayu	🌧️
+xiaxue	❄️
+yueliang	🌙
+caihong	🌈
+
+# ===== 动物类（新增）=====
+cat	🐱
+dog	🐶
+bear	🐻
+rabbit	🐰
+panda	🐼
+fox	🦊
+pig	🐷
+monkey	🐵
+mao	🐱
+gou	🐶
+xiong	🐻
+tuzi	🐰
+xiongmao	🐼
