@@ -36,9 +36,9 @@ wxpy-Kaomoji/
 
 ## 前置要求
 
-- 已安装 [万象拼音](https://github.com/amzxyz/rime-wanxiang) 方案
+- 已安装 [万象拼音](https://github.com/amzxyz/rime-wanxiang) 方案（v17.1.0 ~ v17.2.2 已验证）
 - fcitx5 + rime（librime）
-- **重要**：如果你遇到 emoji 候选不显示的问题（输入「开心」没有 😄），需先修复 super_replacer 的 Config 兼容性 bug，详见下方「已知问题」章节
+- **v17.1.0 用户注意**：如果你遇到 emoji 候选不显示的问题（输入「开心」没有 😄），需先修复 super_replacer 的 Config 兼容性 bug，详见下方「已知问题」章节。**v17.2.0+ 官方已修复，无需处理。**
 
 ## 安装方法
 
@@ -219,13 +219,15 @@ kaixin	(◕‿◕)
 
 ### emoji 候选不显示（super_replacer Config bug）
 
+> **v17.2.0+ 已官方修复**：万象作者在 v17.2.x 改用 `wanxiang.load_file_with_fallback("build/default.yaml")` 直接读取文件，彻底绕开了 `Config()` 调用。**以下内容仅适用于 v17.1.0 及更早版本。**
+
 **现象**：输入「开心」时，不仅没有颜文字，连 emoji（😄）也没有。
 
-**原因**：万象的 `super_replacer.lua` 调用全局 `Config("default")`，但 librime 1.10.0 的 lua 绑定未导出此函数，导致 `M.init` 崩溃，`replacer.userdb` 无法构建。
+**原因**：万象 v17.1.0 的 `super_replacer.lua` 调用全局 `Config("default")`，但 librime 1.10.0 的 lua 绑定未导出此函数，导致 `M.init` 崩溃，`replacer.userdb` 无法构建。
 
 **判断方法**：检查 `~/.local/share/fcitx5/rime/` 下是否存在 `replacer.userdb`。如果不存在且其他 userdb（tips.userdb、en.userdb 等）正常，即为此 bug。
 
-**修复**：修改 `lua/wanxiang/super_replacer.lua` 的 `enabled_schema_ids()` 函数，将：
+**修复（仅 v17.1.0）**：修改 `lua/wanxiang/super_replacer.lua` 的 `enabled_schema_ids()` 函数，将：
 
 ```lua
 local config = Config("default")
@@ -241,7 +243,8 @@ if type(Config) == "function" then
 end
 ```
 
-详见万象 issue（待提交）。
+**升级用户**：如果你遇到此问题，最简单的解决方案是升级万象到 v17.2.0+，官方已修复。
+
 
 ## 卸载
 
@@ -267,11 +270,11 @@ end
 
 ## 兼容性
 
-- 万象版本：17.1.0（补丁基于此版本生成）
+- 万象版本：v17.1.0 ~ v17.2.2 已验证（Config bug 仅影响 v17.1.0，v17.2.0+ 官方已修复）
 - librime：1.10.0
 - 系统：Ubuntu 24.04（fcitx5）
 
-新版万象如果修改了 `super_symbols.lua` 的数据加载逻辑，补丁可能需要手动适配，参考手动安装章节。
+新版万象如果修改了 `super_symbols.lua` 的数据加载逻辑，kaomoji 补丁可能需要手动适配，参考手动安装章节。
 
 ## 许可
 
