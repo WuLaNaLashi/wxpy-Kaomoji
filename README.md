@@ -67,12 +67,42 @@ cp lua/data/kaomoji_replacer.txt ~/.local/share/fcitx5/rime/lua/data/
 
 ```bash
 cd ~/.local/share/fcitx5/rime
-patch -p0 < /path/to/wxpy-Kaomoji/patches/super_symbols_kaomoji.patch
+patch -p1 < /path/to/wxpy-Kaomoji/patches/super_symbols_kaomoji.patch
 ```
 
-补丁作用：修改 `lua/wanxiang/super_symbols.lua`，使其加载 `data_kaomoji` 数据文件。
+补丁作用：修改 `lua/wanxiang/super_symbols.lua`，添加 kaomoji 数据加载和 `/kk` 触发定义。
 
-如果补丁无法应用（新版万象代码变动），手动修改 `super_symbols.lua` 的数据加载部分，添加：
+**v17.9.x 手动修改方法**（补丁失效时）。改动有两处：
+
+**第一处：数据加载**（`load_stores` 函数，约 95 行）：
+
+```lua
+local symbol_path = config:get_string("super_symbols/data_sym") or "lua/data/codex_sym.txt"
+local emoji_path = config:get_string("super_symbols/data_emoji") or "lua/data/codex_emoji.txt"
+local kaomoji_path = config:get_string("super_symbols/data_kaomoji") or "lua/data/kaomoji.txt"  -- 新增
+
+env.super_symbols_stores = {
+    sym = read_store(symbol_path, "super_sym"),
+    emoji = read_store(emoji_path, "super_emoji"),
+    kaomoji = read_store(kaomoji_path, "super_kaomoji")  -- 新增
+}
+```
+
+**第二处：触发定义**（`build_trigger_defs` 函数，约 118 行）：
+
+```lua
+local kaomoji_prefix = config:get_string("super_symbols/prefix_kaomoji") or "/kk"  -- 新增
+
+-- 在 emoji 的 trigger_defs 之后新增：
+trigger_defs[#trigger_defs + 1] = {
+    kind = "kaomoji",
+    exact = kaomoji_prefix,
+    label = "颜文字",
+    search_marks = {"?", "/"}
+}
+```
+
+**v17.1 ~ v17.2 手动修改方法**（旧版结构，`STATE.stores`）：
 
 ```lua
 local kaomoji_path = config:get_string("super_symbols/data_kaomoji") or "lua/data/kaomoji.txt"
@@ -257,7 +287,7 @@ end
 2. 还原 lua 补丁：
    ```bash
    cd ~/.local/share/fcitx5/rime
-   patch -R -p0 < /path/to/wxpy-Kaomoji/patches/super_symbols_kaomoji.patch
+   patch -R -p1 < /path/to/wxpy-Kaomoji/patches/super_symbols_kaomoji.patch
    ```
 
 3. 从 `wanxiang.custom.yaml` 中删除颜文字相关配置

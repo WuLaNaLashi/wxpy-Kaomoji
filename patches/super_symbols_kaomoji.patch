@@ -1,16 +1,38 @@
---- /tmp/wx_orig_check/super_symbols_orig.lua	2026-08-05 08:35:19.853479678 +0800
-+++ lua/wanxiang/super_symbols.lua	2026-08-05 08:27:52.118449890 +0800
-@@ -132,10 +132,12 @@
+--- a/lua/wanxiang/super_symbols.lua	2026-09-01 08:41:14.827860786 +0800
++++ lua/wanxiang/super_symbols.lua	2026-09-01 08:40:57.646858414 +0800
+@@ -94,10 +94,12 @@
          local config = env.engine.schema.config
-         local sym_path = config:get_string("super_symbols/data_sym") or "lua/data/codex_sym.txt"
+         local symbol_path = config:get_string("super_symbols/data_sym") or "lua/data/codex_sym.txt"
          local emoji_path = config:get_string("super_symbols/data_emoji") or "lua/data/codex_emoji.txt"
 +        local kaomoji_path = config:get_string("super_symbols/data_kaomoji") or "lua/data/kaomoji.txt"
  
-         STATE.stores = {
-             sym = read_store(sym_path, "super_sym"),
+         env.super_symbols_stores = {
+             sym = read_store(symbol_path, "super_sym"),
 -            emoji = read_store(emoji_path, "super_emoji")
 +            emoji = read_store(emoji_path, "super_emoji"),
 +            kaomoji = read_store(kaomoji_path, "super_kaomoji")
          }
-         STATE.loaded = true
+     end)
+ 
+@@ -117,6 +119,7 @@
+ 
+     local sym_prefix = config:get_string("super_symbols/prefix_sym") or "/sym"
+     local emoji_prefix = config:get_string("super_symbols/prefix_emoji") or "/emoji"
++    local kaomoji_prefix = config:get_string("super_symbols/prefix_kaomoji") or "/kk"
+ 
+     trigger_defs[#trigger_defs + 1] = {
+         kind = "sym",
+@@ -132,6 +135,13 @@
+         search_marks = {"?", "/"}
+     }
+ 
++    trigger_defs[#trigger_defs + 1] = {
++        kind = "kaomoji",
++        exact = kaomoji_prefix,
++        label = "颜文字",
++        search_marks = {"?", "/"}
++    }
++
+     table.sort(trigger_defs, function(a, b)
+         return #a.exact > #b.exact
      end)

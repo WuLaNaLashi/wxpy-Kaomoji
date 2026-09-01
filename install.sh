@@ -74,8 +74,15 @@ if [ ! -f "$TARGET" ]; then
 elif grep -q "data_kaomoji" "$TARGET" 2>/dev/null; then
     green "  ✓ 补丁已应用过（检测到 data_kaomoji），跳过"
 else
-    if patch --dry-run -p0 -d "$RIME_DIR" < "$PATCH" >/dev/null 2>&1; then
-        if patch -p0 -d "$RIME_DIR" < "$PATCH"; then
+    # 优先 -p1（新补丁格式带 a/ 前缀），回退 -p0（旧补丁格式）
+    local p_level="-p1"
+    if ! patch --dry-run -p1 -d "$RIME_DIR" < "$PATCH" >/dev/null 2>&1; then
+        if patch --dry-run -p0 -d "$RIME_DIR" < "$PATCH" >/dev/null 2>&1; then
+            p_level="-p0"
+        fi
+    fi
+    if patch --dry-run $p_level -d "$RIME_DIR" < "$PATCH" >/dev/null 2>&1; then
+        if patch $p_level -d "$RIME_DIR" < "$PATCH"; then
             green "  ✓ 补丁已应用"
         else
             red "  ✗ 补丁应用失败"
